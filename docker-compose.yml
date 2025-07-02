@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    platform: linux/amd64 #mac siliconを使っているため、プラットフォームをamd64に指定.
+    volumes:
+      - "./:/home/user/data"
+    tty: true
